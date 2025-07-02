@@ -1,6 +1,6 @@
 'use strict';
 /**
- * returns a flatten array
+ * Returns a flatten array
  * @param {array} arrayObject - array(s) to be flatten
  * @returns a flatten array
  */
