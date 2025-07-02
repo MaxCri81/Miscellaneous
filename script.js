@@ -48,7 +48,7 @@ function FizzBuzz(number)
 {
   console.log(number % 15 == 0 && "FizzBuzz" || number % 5 == 0 && "Buzz" || number % 3 == 0 && "Fizz" || number);
 }
-//for (let i=1; i < 16; i++) FizzBuzz(i)
+for (let i=1; i < 16; i++) FizzBuzz(i)
 
 /**
  * Returns the factorial of a number using recursion.
