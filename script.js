@@ -76,9 +76,9 @@ function reverseString(word)
 console.log(reverseString("Massimiliano"));
 
 /**
- * Returns the name with the first capital letter and the remaining ones in lower case
+ * Returns a string with the first capital letter and the remaining ones in lower case
  * @param {string} name to be fixed
- * @returns the name with the first capital letter and the remaining ones in lower case
+ * @returns a string with the first capital letter and the remaining ones in lower case
  */
 function fixCapitalization(name)
 {
