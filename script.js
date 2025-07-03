@@ -62,6 +62,60 @@ function factorial(n)
 }
 console.log(factorial(7));
 
+/**
+ * Returns a reversed string
+ * @param {string} word to be reversed
+ * @returns a reversed string
+ */
+function reverseString(word)
+{
+  let toReturn ="";
+  for (let i= word.length -1; i >= 0; i--) toReturn += word[i];
+  return toReturn;
+}
+console.log(reverseString("Massimiliano"));
+
+/**
+ * Returns the name with the first capital letter and the remaining ones in lower case
+ * @param {string} name to be fixed
+ * @returns the name with the first capital letter and the remaining ones in lower case
+ */
+function fixCapitalization(name)
+{
+  return name[0].toUpperCase() + name.slice(1).toLowerCase();
+}
+console.log(fixCapitalization("massImIliaNo"));
+
+/**
+ * Verify if a word or phrase reads the same backwards and forwards
+ * @param {string} word to be checked
+ * @returns true or false if the word is palindrome
+ */
+function isPalindrome(word)
+{
+  return word === reverseString(word);
+}
+console.log(isPalindrome("racecar"));
+console.log(isPalindrome("level"));
+
+/**
+ * Check if two strings are anagrams
+ * @param {string} word1 to check
+ * @param {string} word2 to check
+ * @returns true or false whether two words contain the exact same letters in any order
+ */
+function checkAnagrams(word1, word2)
+{
+  if (word1.length != word2.length) return false;
+  if (word1 === word2) return true;
+  for (let i=0; i < word1.length; i++)
+  {
+    if (!word2.includes(word1[i])) return false;
+  }
+  return true
+}
+console.log(checkAnagrams("listen", "silent"));
+
 
 
 
