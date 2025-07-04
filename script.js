@@ -94,10 +94,10 @@ console.log(fixCapitalization("massImIliaNo"));
 function capitalizeName(name)
 {
   const capitalizedName = [];
-  for (const n of name.split(" "))
+  for (const n of name.toLowerCase().split(" "))
   {
-    //capitalizedName.push(n.replace(n[0], n[0].toUpperCase()));
-    capitalizedName.push(n[0].toUpperCase() + n.slice(1).toLowerCase());
+    capitalizedName.push(n.replace(n[0], n[0].toUpperCase()));
+    //capitalizedName.push(n[0].toUpperCase() + n.slice(1)); // alternatively
   }
   return capitalizedName.join(" ");
 }
