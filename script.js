@@ -105,6 +105,19 @@ console.log(capitalizeName("jessica ann smITh"));
 console.log(capitalizeName("massimo crisafulli"));
 
 /**
+ * @param {string/number} number to be masked
+ * @returns a string with the last 4 digits visible and the rest masked by the "*"
+ */
+function maskNumber(number)
+{
+  const stringNumber = number + ""; // convert to string
+  const slicedNumber = stringNumber.slice(-4); // take the last 4 digits
+  return slicedNumber.padStart(stringNumber.length, "*"); // mask all the remaing characters
+}
+console.log(maskNumber(5633423453));
+console.log(maskNumber("554435798689"));
+
+/**
  * Verify if a word or phrase reads the same backwards and forwards
  * @param {string} word to be checked
  * @returns true or false if the word is palindrome
