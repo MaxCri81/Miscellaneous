@@ -8,5 +8,6 @@ Useful functions in JavaScript
 - reverseString -> Returns a reversed string
 - fixCapitalization -> Returns a string with the first capital letter and the remaining ones in lower case
 - capitalizeName -> Returns all names with the first capital letter and the rest in lower cases
+- maskNumber -> Returns a string with the last 4 digits visible and the rest masked by the "*"
 - isPalindrome -> Verify if a word or phrase reads the same backwards and forwards
 - checkAnagrams -> Check if two strings are anagrams
