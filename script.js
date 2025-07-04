@@ -87,6 +87,24 @@ function fixCapitalization(name)
 console.log(fixCapitalization("massImIliaNo"));
 
 /**
+ * Returns all names with the first capital letter and the rest in lower cases
+ * @param {string} name(s) to be capitalized
+ * @returns all names with the first capital letter and the rest in lower cases
+ */
+function capitalizeName(name)
+{
+  const capitalizedName = [];
+  for (const n of name.split(" "))
+  {
+    //capitalizedName.push(n.replace(n[0], n[0].toUpperCase()));
+    capitalizedName.push(n[0].toUpperCase() + n.slice(1).toLowerCase());
+  }
+  return capitalizedName.join(" ");
+}
+console.log(capitalizeName("jessica ann smITh"));
+console.log(capitalizeName("massimo crisafulli"));
+
+/**
  * Verify if a word or phrase reads the same backwards and forwards
  * @param {string} word to be checked
  * @returns true or false if the word is palindrome
