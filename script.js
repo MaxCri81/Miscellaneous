@@ -19,12 +19,15 @@ console.log(flatArray(nestedArray));
  */
 function maxInArray(arrayObject)
 {
-  let maxValue = 0;
-  for (const x of flatArray(arrayObject))
-  {
-    x > maxValue ? maxValue = x : maxValue;
-  }
-  return maxValue;
+  // Traditional way
+  // let maxValue = 0;
+  // for (const x of flatArray(arrayObject))
+  // {
+  //   x > maxValue ? maxValue = x : maxValue;
+  // }
+  // return maxValue;
+
+  return flatArray(arrayObject).reduce((temp, value) => temp > value ? temp : value, 0);
 }
 console.log(maxInArray(nestedArray));
 
