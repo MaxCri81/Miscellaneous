@@ -1,6 +1,6 @@
 'use strict';
 /**
- * Returns a flatten array
+ * Returns a flattened array
  * @param {array} arrayObject - array(s) to be flatten
  * @returns a flatten array
  */
@@ -152,7 +152,7 @@ console.log(checkAnagrams("listen", "silent"));
 
 /** @returns a random die (1 to 6) */
 const randomDice = () => Math.trunc(Math.random() * 6) + 1;
-/** Create an array of 100 hundred random dice */
+/** Create and fill an array of length 100 with random dice numbers */
 const oneHundredDices = Array.from({length: 100}, randomDice);
 console.log(oneHundredDices);
 
