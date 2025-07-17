@@ -150,6 +150,12 @@ function checkAnagrams(word1, word2)
 }
 console.log(checkAnagrams("listen", "silent"));
 
+/** @returns a random die (1 to 6) */
+const randomDice = () => Math.trunc(Math.random() * 6) + 1;
+/** Create an array of 100 hundred random dice */
+const oneHundredDices = Array.from({length: 100}, randomDice);
+console.log(oneHundredDices);
+
 
 
 
