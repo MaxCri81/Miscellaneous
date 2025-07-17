@@ -1,6 +1,6 @@
 # Miscellaneous
 Useful functions in JavaScript
-- flatArray -> Returns a flatten array
+- flatArray -> Returns a flattened array.
 - maxInArray -> Returns the largest Number in an array 
 - cleanArray -> Remove duplicates from an Array
 - FizzBuzz -> Print numbers 1 to N, replacing multiples of 3 with “Fizz,” multiples of 5 with “Buzz,” and multiples of both with “FizzBuzz.”
@@ -11,3 +11,4 @@ Useful functions in JavaScript
 - maskNumber -> Returns a string with the last 4 digits visible and the rest masked by the "*"
 - isPalindrome -> Verify if a word or phrase reads the same backwards and forwards
 - checkAnagrams -> Check if two strings are anagrams
+- oneHundredDices -> Create and fill an array of length 100 with random dice numbers.
