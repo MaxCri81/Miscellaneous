@@ -168,6 +168,3 @@ console.log(randomInt(10, 20));
 
 
 
-
-
-
