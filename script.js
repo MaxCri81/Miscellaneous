@@ -156,6 +156,14 @@ const randomDice = () => Math.trunc(Math.random() * 6) + 1;
 const oneHundredDices = Array.from({length: 100}, randomDice);
 console.log(oneHundredDices);
 
+/**
+ * @param {Number} min - start generating from
+ * @param {Number} max - end generating to
+ * @returns a random integer number between min and max
+ */
+const randomInt = ((min, max) => Math.floor(Math.random() * (max - min + 1)) + min);
+console.log(randomInt(10, 20));
+
 
 
 
