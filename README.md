@@ -12,3 +12,4 @@ Useful functions in JavaScript
 - isPalindrome -> Verify if a word or phrase reads the same backwards and forwards
 - checkAnagrams -> Check if two strings are anagrams
 - oneHundredDices -> Create and fill an array of length 100 with random dice numbers.
+- randomInt -> Returns a random integer number between min and max
